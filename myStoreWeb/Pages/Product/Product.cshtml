@@ -1,0 +1,40 @@
+﻿@page
+@model myStoreWeb.Pages.Product.ProductModel
+@{
+}
+
+<br />
+<h2> Products list </h2>
+<a class="btn btn-primary btn-sm" href='/Product/Add'>Add new item</a>
+
+
+<table class=" table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Main Category</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listProduct)
+        {
+            <tr>
+                <td> @item.id </td>
+                <td> @item.name</td>
+                <td> @item.price</td>
+                <td> @item.Category_id</td>
+                <!-- add the img column, skip this for the time  -->
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Product/Edit?id=@item.id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Product/delete?id=@item.id">Delete</a>
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

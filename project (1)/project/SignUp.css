@@ -1,0 +1,68 @@
+*{
+  text-align: center;
+}
+body{
+  background-image: url(https://wallpaperaccess.com/full/1429706.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  }
+
+h3 {
+  padding : 2px;
+}
+.SignUp-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 125px;
+  opacity: 0.95;
+  
+  
+}
+.border{
+  width: 400px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 3%  ;
+  margin: auto;
+
+}
+#box{
+  
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+#Sign{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #0d6efd;
+  background: image #0d6efd;;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  
+}
+.SignUp-page label{
+  color: black;
+  margin: 5px;
+}
+.Upper{
+color: black;
+
+}
+a{
+  color: white;
+}

@@ -1,0 +1,73 @@
+﻿@page
+@model customer.Pages.Category.CategoryModel
+@{
+}
+<style>
+    .box {  
+    right: 0;
+    width :100%;
+    font-size:20px;
+    text-align: center;
+   
+    }
+
+    td {
+        height : 50px;
+         vertical-align :center;
+    }
+    .btn{
+        width:100%;
+       
+        border-radius: 5px;
+       
+    background: -moz-linear-gradient(-45deg, #FFFFFF 0%, #4AA9F1 50%, #0949aa 100%);
+    background: -webkit-linear-gradient(-45deg, #FFFFFF 0%, #4AA9F1 50%, #0949aa 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, #4AA9F1 50%, #0949aa 100%);
+    box-shadow: 4px 2px 6px 5px rgba(0,14,86,0.86);
+        font-family: Impact, Charcoal, sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #EEF9FF;
+   
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    }
+   
+</style>
+
+<br />
+<h2> Category list </h2>
+
+<div class="box">
+<table class=" table">
+    <thead>
+        <tr>
+           
+            <th>Categories</th>
+          
+           
+        </tr>
+    </thead>
+    <tbody>
+        <!-- to fill the table from data base -->
+        @foreach (var item in Model.listCategory)
+        {
+            <tr>
+               
+                <td>
+                        <a class="btn" href="/Product/Product?name=@item.name">
+                    <span> @item.name </span>
+                   <br>
+                   <br >
+                   <br>
+                   <span>  @item.email</span>
+              <br>
+             </a>
+             </tr>
+              
+        }
+    </tbody>
+</table>
+</div>

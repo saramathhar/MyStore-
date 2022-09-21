@@ -1,0 +1,33 @@
+.grid_container {
+    
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 10px;
+    margin-top: 75px;
+}
+
+.grid_item {
+background-color: white;
+border: 1px solid #0d6efd;
+box-shadow: 4px 8px #0d6efd;
+padding: 20px;
+font-size: 30px;
+text-align: center;
+width: 335px;
+height: 150px;
+}
+.grid_container .grid_item .photo{
+height: 70px;
+width: 50px;
+}
+.grid_container .grid_item .photo2{
+height: 70px;
+width: 70px;
+}
+.grid_container .grid_item .photo3{
+height: 65px;
+width: 50px;
+}

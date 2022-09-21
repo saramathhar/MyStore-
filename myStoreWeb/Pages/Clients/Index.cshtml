@@ -1,0 +1,36 @@
+﻿@page
+@model myStoreWeb.Pages.Clients.IndexModel
+@{
+}
+
+
+
+<br/>
+<h2> clients list </h2>
+
+<table class=" table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Phone</th>
+            <th>Address</th>
+      
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in  Model.listClients)
+        {
+            <tr>
+                <td> @item.id </td>
+                <td> @item.name</td>
+                <td> @item.email</td>
+                <td> @item.password</td>
+                <td> @item.phone</td>
+                <td> @item.address</td>
+            </tr>
+        }
+    </tbody>
+</table>
